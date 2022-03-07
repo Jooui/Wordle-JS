@@ -1,0 +1,114 @@
+/* @import url("./fonts/css/fonts.css"); */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight:normal;
+}
+
+body, html { 
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    max-width: 512px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+header {
+    height: 55px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: grey;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.header__title {
+    font-size: 30px;
+    /* font-weight: 900; */
+    font-weight: bolder;
+    color: black;
+}
+
+.header__help {
+    width: 100px;
+}
+
+.header__help i {
+    cursor: pointer;
+}
+
+.header__options {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__options i{
+    cursor: pointer;
+    padding: 0px 8px;
+}
+
+main {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.game_table {
+    border-spacing: 4px;
+}
+
+.game_table td {
+    width: 65px;
+    height: 60px;
+    border: 2px solid #b3b5b6;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bolder;
+    overflow: hidden;
+    align-self: start;
+    transition: 500ms;
+    
+}
+
+.missed {
+    background-color: #c9b458;
+    border: 2px solid #c9b458 !important;
+    color: white !important;
+}
+
+.correct {
+    background-color: #6aaa64;
+    border: 2px solid #6aaa64 !important;
+    color: white !important;
+}
+
+.wrong {
+    background-color: #787c7e;
+    border: 2px solid #787c7e !important;
+    color: white !important;
+}
+
+.flip {
+    transform: rotateY(360deg);
+}

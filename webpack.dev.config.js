@@ -70,6 +70,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/frontend/index.html",
       filename: "./index.html",
+      favicon: "./src/assets/wordle_logo_32x32.png",
       excludeChunks: [ 'server' ]
     }),
     new webpack.HotModuleReplacementPlugin(),
